@@ -1,0 +1,13 @@
+# Packages
+ &PACKAGES
+ useCAL         = .TRUE.,
+ useEXF         = .TRUE.,
+ useOBCS        = .TRUE.,
+ useKPP         = .TRUE.,
+ useDIAGNOSTICS = .TRUE.,
+ usePTRACERS=.TRUE.,
+ useGCHEM=.TRUE.,
+#useMNC=.TRUE.,
+ useSEAICE = .FALSE.,
+
+ &

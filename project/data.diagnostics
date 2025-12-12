@@ -1,0 +1,88 @@
+# Diagnostic Package Choices
+#
+ &diagnostics_list
+     dumpAtLast = .TRUE.,
+#-- 
+# Example of a 2d field output in 6 hour snapshots
+#--
+  fields(1,1) = 'ETAN    ',
+  fileName(1) = 'diags/EtaN_day_snap/EtaN_day_snap',
+  frequency(1) =  -21600.,
+#  
+#-- 
+# Example of a 2d field output in monthly means
+#--
+  fields(1,2) = 'ETAN    ',
+  fileName(2) = 'diags/EtaN_mon_mean/EtaN_mon_mean',
+  frequency(2) =  2592000.,
+#
+#-- 
+# Example of 3d fields output in monthly shapshots
+#--
+  fields(1:2,3) = 'UVEL    ','VVEL    ',
+  fileName(3) = 'diags/vel_3D_mon_snap/vel_3D_mon_snap',
+  frequency(3) = -2592000.,
+#
+#-- 
+#-- 
+# Example of 3d fields output in monthly means
+#--
+  fields(1:2,4) = 'THETA   ','SALT    ',
+  fileName(4) = 'diags/TS_3D_mon_mean/TS_3D_mon_mean',
+  frequency(4) = 2592000.,
+#
+#-- 
+# Example of 3d fields output as means at the surface only
+#--
+  fields(1:2,5) = 'THETA   ','SALT    ',
+  fileName(5) = 'diags/TS_surf_daily_mean/TS_surf_daily_mean',
+  frequency(5) = -21600.,
+  levels(:,5) = 1,
+#
+  fields(1:2,6) = 'UVEL   ','VVEL    ',
+  fileName(6) = 'diags/UV_surf_daily_mean/UV_surf_daily_mean',
+  frequency(6) = -21600.,
+  levels(:,6) = 1,
+
+# 3D THETA & SALT snapshots every 6 hours
+  fields(1:2,7) = 'THETA  ','SALT  ',
+  fileName(7)   = 'diags/TS_3D_snap/TS_3D_snap',
+  frequency(7)  = -21600.,     
+              
+
+# 3D UVEL & VVEL snapshots every 6 hours
+  fields(1:2,8) = 'UVEL  ','VVEL  ',
+  fileName(8)   = 'diags/UV_3D_snap/UV_3D_snap',
+  frequency(8)  = -21600.,
+
+# 3D WVEL snapshots every 6 hours
+  fields(1:1,9) = 'WVEL',
+  fileName(9)   = 'diags/WVEL_3D_snap/WVEL_3D_snap',
+  frequency(9)  = -21600.,
+
+# BLING stuff (output is snap every 6 hours, 3D)
+
+  fileName(10)    = 'diags/bling/blingTracDiag/blingTracDiag',
+  fields(1:8,10)  = 'TRAC01  ','TRAC02  ','TRAC03  ',
+                     'TRAC04  ','TRAC05  ','TRAC06  ',
+                   'TRAC07  ','TRAC08  ',
+  frequency(10)   = -21600.,
+
+  fileName(11)    = 'diags/bling/fe_dep/fe_dep',
+  fields(1:1,11)  = 'BLGSURFE',
+  frequency(11)   = -21600.,
+
+  fileName(12)    = 'diags/bling/irradiance/irradiance',
+  fields(1:1,12)  = 'BLGIRRIS',
+  frequency(12)   = -21600.,
+
+  fileName(13)    = 'diags/bling/productivity/productivity',
+  fields(1:4,13)  = 'BLGNPP  ','BLGCHL  ','BLGPSM  ',
+                   'BLGPLG  ',
+  frequency(13)   = -21600.,
+
+ &
+
+# Parameter for Diagnostics of per level statistics:
+ &DIAG_STATIS_PARMS
+ &
