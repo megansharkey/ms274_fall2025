@@ -1,1 +1,18 @@
 This is my repository for my MS274 final project. 
+
+Experiment Description
+
+In this project, I investigate fjord-scale circulation, stratification, vertical transport, and productivity patterns in Nuup Kangerlua, a major fjord system in southwest Greenland. This region exhibits complex bathymetry and strong spatial variability in mixing, which structure the movement of heat, freshwater, and nutrients throughout the fjord and influence biological productivity.
+
+The central research questions guiding this work are:
+
+Q1: How does vertical structure and vertical velocity vary spatially and temporally within Nuup Kangerlua?
+Q2: Where in the fjord are hotspots of localized vertical mixing, and what physical features are they associated with?
+Q3: How do patterns of primary productivity and phytoplankton biomass relate to the physical structure and mixing hotspots within Nuup Kangerlua?
+Q4: How well does the model capture observed fjord structure and variability?
+
+To address these questions, I constructed a high-resolution MITgcm model of Nuup Kangerlua and ran a 43-day simulation beginning January 1, 2017, using ECCO V4r4 initial conditions, atmospheric forcing, and open boundary conditions. The model resolves temperature, salinity, and 3-D circulation, enabling an assessment of stratification patterns, vertical velocities, and mixing behavior across the fjord. Model output is compared to hydrographic observations from the Greenland Ecosystem Monitoring (GEM) program to evaluate fidelity.
+
+In parallel with the physical modeling, I analyze key biogeochemical indicators—including iron deposition, irradiance, nitrate concentration, chlorophyll, net primary production, and small and large phytoplankton biomass—to contextualize how modeled physical processes align with observed productivity patterns.
+
+Together, these analyses provide a baseline understanding of how physical dynamics structure the fjord environment and influence conditions relevant to nutrient supply and primary productivity, laying the groundwork for future simulations that incorporate longer integrations, meltwater forcing, sea ice, and biogeochemical cycling.
